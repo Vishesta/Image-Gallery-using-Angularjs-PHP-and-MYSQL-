@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Sep 10, 2019 at 11:23 AM
+-- Generation Time: Sep 10, 2019 at 06:43 PM
 -- Server version: 5.7.21
 -- PHP Version: 5.6.35
 
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `register` (
 
 INSERT INTO `register` (`id`, `name`, `password`) VALUES
 (1, 'vish', 'vishae'),
-(5, 'vishesta', 'vishesta'),
+(5, 'vishesta', 'vish'),
 (8, 'ash', 'vishestae');
 
 -- --------------------------------------------------------
@@ -79,29 +79,6 @@ INSERT INTO `tbl_images` (`id`, `name`) VALUES
 (14, 'm.jpg'),
 (15, 'o.jpg'),
 (16, 'p.jpg');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `user`
---
-
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE IF NOT EXISTS `user` (
-  `id` int(255) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`id`, `username`, `password`) VALUES
-(1, 'admin', 'admin'),
-(2, 'vishesta', 'vishesta'),
-(3, 'ffffrrfrf', 'ssssssss');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
